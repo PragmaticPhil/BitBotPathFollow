@@ -1,7 +1,8 @@
 # BitBotPathFollow
 Use micro Python on micro:bit to program your bit:bit to retrace a path
 
-Conceived and written by Philip Meitiner - @PragmaticPhil
+Concieved and written by Philip Meitiner - @PragmaticPhil.
+
 Do with it what thou wilt.
 
 Thanks to several people who helped me discover the vagaries of Python.  
