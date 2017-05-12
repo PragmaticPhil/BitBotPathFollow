@@ -27,9 +27,7 @@ Some notes:
 ... load bitBot_PostPath_1.py onto your bitbot.
 
 More Notes:
-... this is my first dabble with micro Python (Java and VBA usually) - you could say its my Hello World.  I think this is apparent in some of the code!  e.g:
-... I don't use booleans here.  I love using booleans in Java, but when I read up about them in Python it sounded like they were just integers masquerading as booleans (so no efficiency - perhaps even a loss in efficiency?).  Couldn't be bothered, and we all know 0 = false.  I probably should have... would make a few areas more readable.  Hmmm.
-... I had to remove comments from the long one - was getting memory errors.  It worked, but comments are sparse.
+... I had to remove comments from the long one - was getting memory errors.  It worked, but comments are sparse.  Sorry.
 ... neopixels are a bit erratic - have limited their use on this basis.
 
 What Next:
@@ -39,12 +37,12 @@ What Next:
 ... better neo-pixel support.
 
 What is good about this:
-... the RC actually has a not-so shabby implementation of button_down and button_up (wtf is is_pressed and was_pressed anyways?).
-... it also drives quite nicely, although you may want to set the tilt active level to your tastest.
-... thanks to help I am quite happy with the IO
+... the RC actually has a not-so shabby implementation of button_down and button_up.
+... it also drives quite nicely, although you may want to set the tilt active level to your tastes.
 ... efficiency of radio transmits... only send 1 per event.  I like that - early iteration appeared to have issued with radio commands stacking up.
 
 BUGS:
 ... every so often the button release does not process properly and the robot spins despite button release. Can;t replicate but I think that some events are clashing.
 ... once the path has been retraced once thats it.  WiP.
 ... there is an upper limit on the size of the path - not really quantified yet
+... some radio packets are dropped / missed.  I don't think this is the code, but it could be.
